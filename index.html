@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fictional UN Promotions with Mobile Money Payment Simulation">
+  <title>United Nations</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="UN/UN-United-Nations-Emblem.png" alt="United Nations Logo" class="logo">
+      <h1>UN Promotions Initiative</h1>
+      <p class="tagline">United Nations initiative for African financial inclusion</p>
+      <p class="disclaimer"><i class="fas fa-exclamation-triangle"></i> <strong>Disclaimer:</strong>This promotion is only available to vulnerable individuals in Africa. A registration fee is required to process your application.</p>
+    </header>
+
+    <main>
+      <section class="gallery-section" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">United Nations Impact</h2>
+        <div class="gallery-carousel">
+          <div class="carousel-slide active">
+            <img src="UN/rwanda.webp" alt="Fictional UN team drilling a borehole in a rural community">
+            <p class="caption">Uplifting Communities</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="UN/UN foundation.jpg" alt="Borehole with solar power">
+            <p class="caption">Solar-powered boreholes</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="UN/education.webp" alt="Fictional UN team building a school">
+            <p class="caption">Building schools for education</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="UN/refugees.webp" alt="Fictional UN team distributing food to refugees">
+            <p class="caption">Feeding refugees in crisis areas</p>
+          </div>
+          <button class="carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+
+      <section class="promo-section" aria-labelledby="promo-title">
+        <h2 id="promo-title">Apply for Financial Support</h2>
+        <form id="application-form" aria-describedby="form-instructions">
+          <p id="form-instructions" class="form-instructions">Fill out the form below to check eligibility for this program.</p>
+          <div class="form-group">
+            <label for="country"><i class="fas fa-globe"></i> Country:</label>
+            <select id="country" class="form-control" required aria-describedby="country-description">
+              <option value="" disabled selected>Select your country</option>
+              <option value="algeria">Algeria</option>
+              <option value="angola">Angola</option>
+              <option value="benin">Benin</option>
+              <option value="botswana">Botswana</option>
+              <option value="burkina_faso">Burkina Faso</option>
+              <option value="burundi">Burundi</option>
+              <option value="cameroon">Cameroon</option>
+              <option value="cape_verde">Cape Verde</option>
+              <option value="central_african_republic">Central African Republic</option>
+              <option value="chad">Chad</option>
+              <option value="comoros">Comoros</option>
+              <option value="congo">Congo</option>
+              <option value="cote_divoire">Côte d'Ivoire</option>
+              <option value="djibouti">Djibouti</option>
+              <option value="egypt">Egypt</option>
+              <option value="equatorial_guinea">Equatorial Guinea</option>
+              <option value="eritrea">Eritrea</option>
+              <option value="eswatini">Eswatini</option>
+              <option value="ethiopia">Ethiopia</option>
+              <option value="gabon">Gabon</option>
+              <option value="gambia">Gambia</option>
+              <option value="ghana">Ghana</option>
+              <option value="guinea">Guinea</option>
+              <option value="guinea_bissau">Guinea-Bissau</option>
+              <option value="kenya">Kenya</option>
+              <option value="lesotho">Lesotho</option>
+              <option value="liberia">Liberia</option>
+              <option value="libya">Libya</option>
+              <option value="madagascar">Madagascar</option>
+              <option value="malawi">Malawi</option>
+              <option value="mali">Mali</option>
+              <option value="mauritania">Mauritania</option>
+              <option value="mauritius">Mauritius</option>
+              <option value="morocco">Morocco</option>
+              <option value="mozambique">Mozambique</option>
+              <option value="namibia">Namibia</option>
+              <option value="niger">Niger</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="rwanda">Rwanda</option>
+              <option value="sao_tome_and_principe">São Tomé and Príncipe</option>
+              <option value="senegal">Senegal</option>
+              <option value="seychelles">Seychelles</option>
+              <option value="sierra_leone">Sierra Leone</option>
+              <option value="somalia">Somalia</option>
+              <option value="south_africa">South Africa</option>
+              <option value="south_sudan">South Sudan</option>
+              <option value="sudan">Sudan</option>
+              <option value="tanzania">Tanzania</option>
+              <option value="togo">Togo</option>
+              <option value="tunisia">Tunisia</option>
+              <option value="uganda">Uganda</option>
+              <option value="zambia">Zambia</option>
+              <option value="zimbabwe">Zimbabwe</option>
+            </select>
+            <p id="country-description" class="form-description">Select your country to view payment instructions.</p>
+          </div>
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+            <input type="tel" id="phone" class="form-control" placeholder="e.g., +254712345678" pattern="\+?[0-9]{10,12}" required aria-describedby="phone-format">
+            <p id="phone-format" class="form-description">Format: Country code with '+' followed by phone number (e.g., +254754497047 for Kenya).</p>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i> Check Eligibility</button>
+        </form>
+      </section>
+
+      <section id="payment-section" class="payment-section hidden" aria-hidden="true">
+        <h2>Select Package</h2>
+        <div class="package-options">
+          <div class="package-card">
+            <h3>Basic</h3>
+            <p>APPLY FOR $1000</p>
+            <p>Registration Fee: <span class="local-amount" data-ksh="299">KSh 299</span></p>
+            <button type="button" class="btn btn-package" data-amount="299"><i class="fas fa-hand-holding-usd"></i> Select</button>
+          </div>
+          <div class="package-card">
+            <h3>Standard</h3>
+            <p>APPLY FOR $5000</p>
+            <p>Registartion Fee: <span class="local-amount" data-ksh="499">KSh 499</span></p>
+            <button type="button" class="btn btn-package" data-amount="499"><i class="fas fa-hand-holding-usd"></i> Select</button>
+          </div>
+          <div class="package-card">
+            <h3>Premium</h3>
+            <p>APPLY FOR $10,000</p>
+            <p>Registartion Fee; <span class="local-amount" data-ksh="899">KSh 899</span></p>
+            <button type="button" class="btn btn-package" data-amount="899"><i class="fas fa-hand-holding-usd"></i> Select</button>
+          </div>
+        </div>
+      </section>
+
+      <dialog id="payment-modal" class="modal" aria-labelledby="payment-title" aria-modal="true">
+        <div class="modal-content">
+          <button type="button" class="close-modal" aria-label="Close"><i class="fas fa-times"></i></button>
+          <h3 id="payment-title">Mobile Money Payment</h3>
+          <p>Send the Registartion fee payment to: <strong>+254754497047</strong></p>
+          <p>Amount: <span id="payment-amount">0</span> <span id="payment-currency">KSh</span></p>
+          <div id="payment-instructions" class="form-description" aria-live="polite">
+            <p>Select your country to view instructions on how to send money to Kenya.</p>
+          </div>
+          <div class="form-group">
+            <label for="confirmation-message"><i class="fas fa-sms"></i> Paste Confirmation Message:</label>
+            <textarea id="confirmation-message" class="form-control" rows="4" placeholder="Paste your mobile money confirmation message here" required aria-describedby="message-instructions"></textarea>
+            <p id="message-instructions" class="form-description">Paste the simulated confirmation message (e.g., 'THI8WHAXTW Confirmed. KSh 299 sent to UN Promotions...').</p>
+          </div>
+          <button type="button" id="confirm-payment" class="btn btn-primary"><i class="fas fa-check-circle"></i> Confirm Payment</button>
+        </div>
+      </dialog>
+
+      <dialog id="receipt-section" class="receipt-section" aria-labelledby="receipt-title" aria-modal="true">
+        <div class="receipt-card">
+          <h3 id="receipt-title">Payment Receipt</h3>
+          <div class="receipt-details">
+            <p><strong>Transaction ID:</strong> <span id="receipt-trx-id"></span></p>
+            <p><strong>Amount:</strong> <span id="receipt-amount"></span> <span id="receipt-currency"></span></p>
+            <p><strong>Phone:</strong> <span id="receipt-phone"></span></p>
+            <p><strong>Date:</strong> <span id="receipt-date"></span></p>
+            <p><strong>Status:</strong> <span class="status-processing">Processing</span></p>
+          </div>
+          <p class="receipt-notice">Application processing. Expect SMS confirmation within 2 hours.</p>
+          <button type="button" id="receipt-close" class="btn btn-primary"><i class="fas fa-times-circle"></i> Close</button>
+        </div>
+      </dialog>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 UN Promotions Initiative</p>
+      <p>
+        <a href="/terms"><i class="fas fa-file-contract"></i> Terms</a> |
+        <a href="/privacy"><i class="fas fa-shield-alt"></i> Privacy</a> |
+        <a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+      </p>
+      <a href="https://wa.me/+254739239646?text=I'm%20encountering%20a%20problem%20with%20the%20UN%20Promotions%20Initiative.%20Please%20assist." class="btn btn-primary whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> If you are encountering problem, click this link to contact us viua whatsapp>
+      </a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
